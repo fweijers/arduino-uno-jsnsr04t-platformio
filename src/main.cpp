@@ -23,6 +23,19 @@ long readUltrasonicCM() {
   return cm;
 }
 
+float readUltrasonicMM() {
+  digitalWrite(PIN_TRIG, LOW);
+  delayMicroseconds(2);
+  digitalWrite(PIN_TRIG, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(PIN_TRIG, LOW);
+
+  long duration = pulseIn(PIN_ECHO, HIGH, 60000UL);
+  if (duration <= 0) return -1;
+  float mm = duration * 0.343 / 2.0;
+  return mm;
+}
+
 long stableUltrasonicCM(int attempts = 3) {
   for (int i = 0; i < attempts; i++) {
     long d = readUltrasonicCM();
@@ -62,8 +75,11 @@ void loop() {
   if (d < 0) {
     Serial.println(F("distance_cm=NaN (timeout)"));
   } else {
+    long d_mm = d * 10; // afstand in millimeter
     Serial.print(F("distance_cm="));
-    Serial.println(d);
+    Serial.print(d);
+    Serial.print(F(" ; distance_mm="));
+    Serial.println(d_mm);
   }
   delay(300);
 }
