@@ -2,12 +2,22 @@
 
 Eenvoudig PlatformIO-project voor het uitlezen van een JSN-SR04T ultrasone sensor met een Arduino Uno.
 
+Dit is een deelproject van "Heltec Lora Boatreadings" om de afstandsmeter die later in de boot gemonteerd wordt even te testen.
+
 ## Hardware
 - Arduino Uno (of compatibele clone)
 - JSN-SR04T (waterdichte ultrasone sensor, 5V)
-- Bekabeling (VCC -> 5V, GND -> GND, TRIG -> D7, ECHO -> D6 in de default code)
+- Bekabeling (VCC -> 5V, GND -> GND, TRIG -> D9, ECHO -> D8 )
 
 > Let op: De Uno is 5V, de JSN-SR04T ook. Bij andere borden (3.3V) kan een spanningsdeler/level shifter nodig zijn.
+
+
+## Foto's
+Arduino plus JSN-SR04T met daarvan de sensor in een aluminium buis. 
+De buis heeft gaatjes onderaan in de zijkant om het bilgewater door te laten
+Ook zijn er kleinere gaatjes vlakbij de sensor om de buis te beluchten; hopelijk voorkom ik daarme dat de sensor later stukgaat door vocht.
+Bovenop zit een witte klodder (niet zo netjes gedaan) siliconenkit om de sensor te beschermen tegen regen (in mijn boot komt deze sensor in directe buitenlucht te zitten namelijk).
+
 
 ## Projectstructuur
 ```text
