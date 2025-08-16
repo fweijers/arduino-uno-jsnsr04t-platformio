@@ -14,12 +14,12 @@ Dit is een deelproject van "Heltec Lora Boatreadings" om de afstandsmeter die la
 
 ## Foto's
 Arduino plus JSN-SR04T met daarvan de sensor in een aluminium buis. 
-![Arduino Uno connected to JSN-SR04T ultrasonic sensor with colored jumper wires on a wooden table, showing clear wiring between VCC, GND, TRIG, and ECHO pins; background includes scattered electronic components and a neutral workspace atmosphere]
+![Arduino Uno connected to JSN-SR04T ultrasonic sensor with colored jumper wires on a wooden table, showing clear wiring between VCC, GND, TRIG, and ECHO pins; background includes scattered electronic components and a neutral workspace atmosphere](images/IMG_3833.jpg)
 
 De buis heeft gaatjes onderaan in de zijkant om het bilgewater door te laten
 Ook zijn er kleinere gaatjes vlakbij de sensor om de buis te beluchten; hopelijk voorkom ik daarme dat de sensor later stukgaat door vocht.
 Bovenop zit een witte klodder (niet zo netjes gedaan) siliconenkit om de sensor te beschermen tegen regen (in mijn boot komt deze sensor in directe buitenlucht te zitten namelijk).
-![JSN-SR04T ultrasonic sensor mounted inside an aluminum tube with small holes at the bottom for bilge water entry and additional ventilation holes near the sensor; the top is sealed with a visible layer of white silicone sealant for weather protection. The setup rests on a wooden table surrounded by electronic components and tools, creating a practical and focused workspace atmosphere.]
+![JSN-SR04T ultrasonic sensor mounted inside an aluminum tube with small holes at the bottom for bilge water entry and additional ventilation holes near the sensor; the top is sealed with a visible layer of white silicone sealant for weather protection. The setup rests on a wooden table surrounded by electronic components and tools, creating a practical and focused workspace atmosphere.](images/IMG_3834.jpg)
 
 
 ## Projectstructuur
